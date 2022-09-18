@@ -6,9 +6,11 @@ import java.math.BigDecimal;
 
 public class ICMS implements Imposto {
 
+    public static final String PERCENTUAL_IMPOSTO = "0.1";
+
     @Override
     public BigDecimal calcular(Orcamento orcamento) {
-        return orcamento.getValor().multiply(new BigDecimal("0.1"));
+        return orcamento.getValor().multiply(new BigDecimal(PERCENTUAL_IMPOSTO));
     }
 
 }
