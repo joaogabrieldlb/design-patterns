@@ -1,3 +1,5 @@
+package br.com.alura.loja;
+
 import br.com.alura.loja.desconto.CalculadoraDeDesconto;
 import br.com.alura.loja.orcamento.Orcamento;
 
