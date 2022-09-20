@@ -12,9 +12,8 @@ public class TestesPedidos {
     public static void main(String[] args) {
         final var cliente = "Rodrigo";
         final var valorOrcamento = new BigDecimal("300");
-        final var quantidadeItens = Integer.parseInt("2");
 
-        final var gerador = new GeraPedido(cliente, valorOrcamento, quantidadeItens);
+        final var gerador = new GeraPedido(cliente, valorOrcamento);
         final var handler =
                 new GeraPedidoHandler(List.of(
                         new SalvarPedidoNoBancoDeDados(),
