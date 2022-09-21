@@ -13,7 +13,7 @@ public class JavaHttpClient implements HttpAdapter {
             URLConnection connection = urlDaApi.openConnection();
             connection.connect();
         } catch (Exception ex) {
-            throw new RuntimeException();
+            throw new RuntimeException(ex);
         }
     }
 }
